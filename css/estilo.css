@@ -6,4 +6,7 @@
 header{
     background-color: blue;
     display: flex;
+    margin: 30px;
+    padding: 30px;
+    border: 10px
 }
