@@ -1,12 +1,30 @@
+/*reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*estilo de header*/
 header{
-    background-color: blue;
+    background-color: white;
     display: flex;
-    margin: 30px;
-    padding: 30px;
-    border: 10px
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
 }
+#img-navbar{
+    width: 20%;
+}
+header nav ul {
+    color: black;
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+
