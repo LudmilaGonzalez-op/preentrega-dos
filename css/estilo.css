@@ -1,233 +1,250 @@
-/*reset*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Ajustes para pantallas medianas (tablets) */
-  @media (max-width: 768px) {
-    body {
-      font-size: 16px;
-    }
-  
-    nav {
-      flex-direction: column; /* Cambia la disposición de la barra de navegación */
-    }
-  }
-  
-/* Ajustes para pantallas pequeñas (móviles) */
-  @media (max-width: 480px) {
-    body {
-      font-size: 14px;
-    }
-  
-    .container {
-      padding: 10px;
-    }
-  }
-  
+@charset "UTF-8";
+/*comentario en sass y css*/
 /*estilo de header*/
-header{
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 20px;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#img-navbar{
-    width: 15%;
+
+body {
+  background-color: hsl(37, 83%, 84%);
 }
+
+header {
+  background-color: #fbb84d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 20px;
+  border-top: 0px solid rgba(147, 144, 144, 0.142);
+  border-bottom: 5px solid rgb(161, 158, 158);
+}
+
+#img-navbar {
+  margin-top: 0;
+  width: 15%;
+}
+
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 60px;
-    font-size: large;
-    font-weight: bold;
-    cursor: pointer;
+  margin: 2px 2px 4px;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    background-color: #f4f4f4;
-    border: 1px;
-    border-radius: 5px;
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: hsl(37, 83%, 84%);
+  border: 1px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 4px;
 }
-a:hover{
-    text-decoration: underline;
-    color: blueviolet;
+
+a:hover {
+  text-decoration: underline;
+  color: blueviolet;
 }
+
 /*dise;os de titulo*/
-#tituloprincipal{
-    margin-top: 40px;
-    text-align: center;
-    font-size: 50px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-;
+#tituloprincipal {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 /*dise;os de imagenes*/
-#container-img{
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
+#container-img {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
 }
-#imagen-1{
-    width: 50%;;
-    height: auto;
+
+#imagen-1 {
+  width: 50%;
+  height: auto;
 }
-#imagen-2{
-    width: 50%;
-    height: 400px;
+
+#imagen-2 {
+  width: 50%;
+  height: 400px;
 }
+
 /*estilo de pie de pagina*/
-#accesorios{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-    width: calc(100%-140%);
-    margin-left:  70px;
-    border-right: 70px;
+#accesorios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+  width: -40%;
+  margin-left: 70px;
+  border-right: 70px;
 }
-#accesorios div{
-    background-color: #f4f4f4;
-    border: 1px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
+
+#accesorios div {
+  background-color: #fbb84d;
+  border: 1px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
+
 /*estilo footer*/
-footer{
-    margin-top: 40px;
-    font-size: small;
+footer {
+  margin-top: 40px;
+  font-size: small;
 }
+
 /*estilos productos*/
 /*estilos de img*/
-main h3{
-    text-align: center;
-    margin-top: 40px;
-    font-size: 30px;
-    text-decoration: underline;
+main h3 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  text-decoration: underline;
 }
-#contenedor-imgproductos{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 40px;
+
+#contenedor-imgproductos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
 }
-#imagenbikinis{
-    text-align: center;
-    max-width: 300px;
+
+#imagenbikinis {
+  text-align: center;
+  max-width: 300px;
 }
-#imagenbikinis img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+#imagenbikinis img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#imagenbikinis h3{
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
-    cursor: pointer;
+
+#imagenbikinis h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
 }
-#imagenbody{
-    text-align: center;
-    max-width: 400px;
+
+#imagenbody {
+  text-align: center;
+  max-width: 400px;
 }
-#imagenbody img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+#imagenbody img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#imagenbody h3{
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
-    cursor: pointer;
+
+#imagenbody h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
 }
-#imagenpijama{
-    text-align: center;
-    max-width: 230px;
+
+#imagenpijama {
+  text-align: center;
+  max-width: 230px;
 }
-#imagenpijama img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+#imagenpijama img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#imagenpijama h3{
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
-    cursor: pointer;
+
+#imagenpijama h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
 }
+
 /*estilos quines somos*/
-#nosotros{
-        text-align: justify; 
-        font-size: 20px; 
-        line-height: 1.6; 
-        margin: 20px; 
-        color: #333; 
+#nosotros {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px;
+  color: #333;
 }
-#contacto{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 20px;
+
+#contacto {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
 }
-#subtitulo{
-    font-size: 25px;
-    font-weight: bold;
+
+#subtitulo {
+  font-size: 25px;
+  font-weight: bold;
 }
+
 /*estilo politicas de cambio*/
-#politicas{
-    text-align: justify; 
-    font-size: 20px; 
-    line-height: 1.6; 
-    margin: 20px; 
-    color: #333; 
+#politicas {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px;
+  color: #333;
 }
+
 /*estilos inicio de sesion*/
-h4{
-    text-align: center;
-    margin-top: 40px;
+h4 {
+  text-align: center;
+  margin-top: 40px;
 }
-#formulario{
-    background-color: white; /* Fondo blanco para el formulario */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    width: 100%;
-    max-width: 500px;
-    margin-top: 40px; 
+
+#formulario {
+  background-color: white; /* Fondo blanco para el formulario */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  width: 100%;
+  max-width: 500px;
+  margin-top: 40px;
 }
+
 form {
-    display: flex;
-    flex-direction: column; /* Los elementos del formulario se apilan verticalmente */
-  }
-  
-  label {
-    margin-bottom: 5px; /* Espacio entre el label y el campo */
-  }
-  
-  input {
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 10px; /* Espacio entre los campos */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 5px; /* Bordes redondeados */
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #4CAF50; /* Color verde */
-    color: white; /* Texto blanco */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049; /* Color verde más oscuro cuando el mouse está sobre el botón */
-  }
+  display: flex;
+  flex-direction: column; /* Los elementos del formulario se apilan verticalmente */
+}
+
+label {
+  margin-bottom: 5px; /* Espacio entre el label y el campo */
+}
+
+input {
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre los campos */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50; /* Color verde */
+  color: white; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Color verde más oscuro cuando el mouse está sobre el botón */
+}
+
+/*# sourceMappingURL=estilo.css.map */
